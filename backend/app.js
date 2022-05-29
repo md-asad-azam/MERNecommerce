@@ -3,19 +3,18 @@ const cookieParser = require("cookie-parser")
 const errorMiddleware = require("./middleware/error")
 const fileUpload = require("express-fileupload")
 const bodyParser = require("body-parser")
-const dotenv = require("dotenv")
 const path = require("path")
 
 
 const app = express();
 app.use(express.json());
 app.use(cookieParser())
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(fileUpload())
 
 //config
-if(process.env.NODE_ENV !== "PRODUCTION"){
-    require("dotenv").dotenv.config({path: "backend/config/config.env"})
+if (process.env.NODE_ENV !== "PRODUCTION") {
+    require("dotenv").config({ path: "backend/config/config.env" })
 }
 
 // Route imports
