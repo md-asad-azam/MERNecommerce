@@ -1,0 +1,82 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 3vmax 9vmax;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#myOrdersHeading {
+    text-align: center;
+    font: 400 1.2vmax "Verdana";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(44, 44, 44);
+}
+
+.myOrdersTable {
+    background-color: white;
+}
+
+.myOrdersTable > div {
+    font: 300 1vmax "Verdana";
+    color: rgba(0, 0, 0, 0.678);
+    border: none;
+}
+
+.myOrdersTable a {
+    color: rgba(0, 0, 0, 0.527);
+}
+
+.myOrdersTable a:hover {
+    color: var(--orange);
+}
+
+.MuiDataGrid-columnHeaders{
+    background: linear-gradient(90deg, yellow, orange);
+}
+.MuiDataGrid-columnHeader {
+    padding: 1vmax !important;
+}
+
+.MuiDataGrid-columnHeader div {
+    color: black;
+    font: 500 1.1vmax "Verdana" !important;
+}
+
+.MuiDataGrid-iconSeparator {
+    display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .myOrdersPage {
+        padding: 0;
+        padding-top: 8vmax;
+        height: 100vh;
+    }
+
+    #myOrdersHeading {
+        font: 400 2vmax "Verdana";
+        padding: 4vw;
+    }
+
+    .myOrdersTable div {
+        font: 300 1vmax "Verdana";
+    }
+
+    .MuiDataGrid-columnHeader {
+        padding: 1vmax !important;
+    }
+
+    .MuiDataGrid-columnHeader div {
+        font: 500 1.5vmax "Verdana" !important;
+    }
+}

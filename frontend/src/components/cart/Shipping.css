@@ -1,0 +1,119 @@
+.checkoutStepsConainer{
+    position: absolute;
+    top: 0.5vmax;
+    width: 100%;
+    z-index: 1;
+}
+
+.shippingContainer{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--login-user-background-url);
+    background-size: cover;
+}
+
+.shippingBox{
+    background-color: transparent;
+    width: 30vw;
+    height: 75vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 8vmax;
+}
+
+.shippingBox{
+    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.035);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);/*just to make it look more defined BTW it is not necessary*/
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+.shippingBox > h2{
+    text-align: center;
+    padding: 1vmax 0;
+    font: 200 2vmax cursive;
+}
+
+.shippingForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 80%;
+    transition: all 0.5s;
+}
+
+.shippingForm > div {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select{
+    padding: 1vmax 1vmax 1vmax 4vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font:  300 0.9vmax "Verdana";
+    outline: none;
+    background: rgba(255, 255, 255, 0.411);
+}
+
+.shippingForm > div > svg{
+    position: absolute;
+    left: 3vmax;
+    font-size: 1.6vmax;
+    color: rgba(0,0,0,0.5);
+}
+
+
+.shippingBtn{
+    border: none;
+    background-color: var(--orange);
+    color: black;
+    font: 300 1vmax "Roboto";
+    width: 55%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.5s;
+    border: 1.5px solid black;
+    margin-bottom: -2vmax;
+}
+
+.shippingBtn:hover{
+    background-color: orange;
+}
+
+
+@media screen and (max-width: 600px){
+    .shippingContainer{
+        height: calc(100vh - 6vmax - 4px);
+    }
+    .shippingBox{
+        width: 90vw;
+        height: 70vh;
+    }
+    .shippingForm > div > .shippingInputData{
+        font-size: 1.7vmax;
+        height: 6vmax;
+    }
+    .shippingForm > div > svg{
+        font-size: 2.5vmax;
+    }
+    .shippingBtn{
+        height: 6vmax;
+        font-size: 2vmax;
+    }
+}

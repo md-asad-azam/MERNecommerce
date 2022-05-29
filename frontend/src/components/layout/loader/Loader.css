@@ -1,0 +1,33 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+.loading > .outer{
+    width: 10vmax;
+    height: 10vmax;
+    border-bottom: 3px solid rgb(255, 217, 0);
+    border-top: 3px solid black;
+    border-radius: 50%;
+    animation: loadRotate 700ms linear infinite;
+
+    display: grid;
+    place-items: center;
+}
+@keyframes loadRotate {
+    to {transform: rotateZ(-360deg);}
+}
+
+.loading .inner{
+    width: 9vmax;
+    height: 9vmax;
+    border-top: 2px solid rgb(255, 217, 0);
+    border-bottom: 2px solid black;
+    border-radius: 50%;
+    animation: loadRotateOpp 500ms linear infinite;
+}
+@keyframes loadRotateOpp {
+    to {transform: rotateZ(0deg);}
+}

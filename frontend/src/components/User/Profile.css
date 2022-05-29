@@ -1,0 +1,130 @@
+.profileContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--login-user-background-url);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.profileContainer > div{
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profileContainer > .profileInfo{
+    height: 90vh;
+}
+
+.profileContainer > .profileInfo > h1{
+    color: rgba(0, 0, 0, 0.5);
+    font: 500 3vmax "Verdana";
+    margin: 2vmax;
+    transform: translateY(-3.5vmax);
+}
+.profileContainer > .profileInfo > img{
+    width: 20vmax;
+    height: 20vmax;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.profileContainer > .profileInfo > img:hover{
+    transform: scale(1.1);
+}
+.profileContainer > .profileInfo > .editProfileButton{
+    border: none;
+    background: linear-gradient(to right, yellow, var(--dark-yellow));
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    padding: 1vmax;
+    margin: 4vmax;
+    text-align: center;
+    transition: all 0.5s;
+    font: 400 1.5vmax "Verdana";
+    border: 1.5px solid black;
+}
+.profileContainer > .profileInfo > .editProfileButton:hover{
+    background: linear-gradient(to left, yellow, var(--dark-yellow));
+}
+
+.profileContainer > .profileInfo2{
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0.5vmax;
+    height: 60vh;
+}
+.profileContainer > .profileInfo2 > div{
+    margin: 1.5vmax 0;
+}
+.profileContainer > .profileInfo2 > div > h4{
+    color: black;
+    font: 400 2vmax "Verdana";
+}
+.profileContainer > .profileInfo2 > div > p{
+    margin: 0.2vmax;
+    color: black;
+    font: 400 1.5vmax cursive;
+}
+
+.profileContainer > .profileInfo2 > .linksContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.profileContainer > .profileInfo2 > .linksContainer > a{
+    border: none;
+    background: linear-gradient(to right, yellow, var(--dark-yellow));
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    padding: 1vmax;
+    margin: 1vmax 2vmax;
+    margin-left: 0;
+    text-align: center;
+    transition: all 0.5s;
+    font: 400 1.5vmax "Verdana";
+    border: 1.5px solid black;
+}
+.profileContainer > .profileInfo2 > .linksContainer > a:hover {
+    background: linear-gradient(to left, yellow, var(--dark-yellow));
+}
+
+@media screen and (max-width: 600px) {
+    .profileContainer{
+        flex-direction: column;
+    }
+    .profileContainer > .profileInfo2{
+        align-items: center;
+        justify-content: center;
+    }
+    .profileContainer > .profileInfo2 div{
+        text-align: center;
+    }
+    .profileContainer > .profileInfo2 > div > h4{
+        font-size: 2.5vmax;
+    }
+    .profileContainer > .profileInfo2 > div > p{
+        font-size: 2vmax;
+    }
+    .profileContainer > .profileInfo2 > .linksContainer{
+        flex-direction: column;
+    }
+    .profileContainer > .profileInfo2 > .linksContainer > a{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .profileContainer > .profileInfo2 {
+        height: 45vh;
+    }
+}

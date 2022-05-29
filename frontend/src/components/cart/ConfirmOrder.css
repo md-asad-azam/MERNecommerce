@@ -1,0 +1,204 @@
+.confirmOrderPage {
+    min-height: 90vh;
+    background-color: white;
+    display: grid;
+    margin-top: 10vh;
+    grid-template-columns: 6fr 3fr;
+  }
+  
+  .confirmOrderPage > div:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.189);
+  }
+  
+  .confirmShippingArea {
+    padding: 5vmax;
+    padding-bottom: 0%;
+  }
+  
+  .confirmShippingArea > p {
+    font: 400 1.8vmax "Verdana";
+  }
+  
+  .confirmShippingAreaBox,
+  .confirmCartItemsContainer {
+    margin: 2vmax;
+  }
+  
+  .confirmShippingAreaBox > div {
+    display: flex;
+    margin: 1vmax 0;
+  }
+  
+  .confirmShippingAreaBox > div > p {
+    font: 400 1vmax "Verdana";
+    color: black;
+  }
+  .confirmShippingAreaBox > div > span {
+    margin: 0 1vmax;
+    font: 100 1vmax "Verdana";
+    color: #575757;
+  }
+  
+  .confirmCartItems > p {
+    font: 400 1.8vmax "Verdana";
+  }
+  
+  .confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+  }
+  
+  .confirmCartItemsContainer {
+    height: auto;
+  }
+  
+  .confirmCartItemsContainer > div {
+    display: flex;
+    font: 400 1vmax "Verdana";
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+  }
+  
+  .confirmCartItemsContainer > div > img {
+    width: 3vmax;
+  }
+  
+  .confirmCartItemsContainer > div > a {
+    color: #575757;
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+  }
+  
+  .confirmCartItemsContainer > div > span {
+    font: 100 1vmax "Verdana";
+    color: #5e5e5e;
+  }
+  
+  .orderSummary {
+    padding: 7vmax;
+  }
+  
+  .orderSummary > p {
+    text-align: center;
+    font: 400 1.8vmax "Verdana";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .orderSummary > div > div {
+    display: flex;
+    font: 300 1vmax "Verdana";
+    justify-content: space-between;
+    margin: 2vmax 0;
+  }
+  .orderSummary > div > div > span {
+    color: rgba(0, 0, 0, 0.692);
+  }
+  
+  .orderSummaryTotal {
+    display: flex;
+    font: 300 1vmax "Verdana";
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.363);
+    padding: 2vmax 0;
+  }
+  
+  .orderSummary > button {
+    background-color: var(--dark-yellow);
+    width: 100%;
+    padding: 1vmax;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    font: 400 1vmax "Verdana";
+    color: black;
+    transition: all 0.5s;
+  }
+  
+  .orderSummary > button:hover {
+    background-color: var(--orange);
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .confirmOrderPage {
+      grid-template-columns: 1fr;
+      height: unset;
+    }
+  
+    .confirmOrderPage > div:last-child {
+      border-left: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.247);
+    }
+  
+    .confirmShippingArea > p {
+      font: 400 6vw "Verdana";
+    }
+  
+    .confirmShippingAreaBox > div {
+      display: flex;
+      margin: 6vw 0;
+    }
+  
+    .confirmShippingAreaBox > div > p {
+      font: 400 4vw "Verdana";
+    }
+    .confirmShippingAreaBox > div > span {
+      font: 100 4vw "Verdana";
+    }
+  
+    .confirmCartItems > p {
+      font: 400 6vw "Verdana";
+    }
+  
+    .confirmCartItemsContainer {
+      max-height: 50vw;
+    }
+  
+    .confirmCartItemsContainer > div {
+      font: 400 4vw "Verdana";
+      margin: 4vw 0;
+    }
+  
+    .confirmCartItemsContainer > div > img {
+      width: 10vw;
+    }
+  
+    .confirmCartItemsContainer > div > a {
+      margin: 0;
+      width: 30%;
+    }
+  
+    .confirmCartItemsContainer > div > span {
+      font: 100 4vw "Verdana";
+    }
+  
+    .orderSummary {
+      padding: 12vw;
+    }
+  
+    .orderSummary > p {
+      font: 400 6vw "Verdana";
+      padding: 4vw;
+    }
+  
+    .orderSummary > div > div {
+      font: 300 4vw "Verdana";
+    }
+  
+    .orderSummaryTotal {
+      font: 300 4vw "Verdana";
+      padding: 5vw 0;
+    }
+  
+    .orderSummary > button {
+      padding: 4vw;
+      margin: 4vw auto;
+      font: 400 4vw "Verdana";
+    }
+  }

@@ -1,0 +1,112 @@
+.paymentContainer {
+    /* display: grid; */
+    /* place-items: center; */
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    height: calc(100vh - 7vmax - 4px);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--login-user-background-url);
+    background-size: cover;
+}
+
+.paymentForm {
+    width: 30%;
+    margin-top: 5vmax;
+    background-color: transparent;
+    box-shadow: 10px 10px 10px rgba(68, 68, 68, 0.035);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+.paymentForm>p {
+    font: 400 2vmax "Verdana";
+    color: rgba(0, 0, 0, 0.753);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 1vmax 0;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.paymentForm>div {
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+}
+
+.paymentInput {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    outline: none;
+    margin: auto;
+}
+
+.paymentForm>div>svg {
+    position: absolute;
+    transform: translateX(4vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+.paymentForm>div:last-child {
+    width: 100%;
+}
+
+.paymentFormBtn {
+    border: none;
+    background-color: var(--dark-yellow);
+    font: 300 0.99vmax "Verdana";
+    width: 80%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: auto;
+    margin-bottom: 1vmax;
+    border: 1.5px solid black;
+}
+
+.paymentFormBtn:hover {
+    background-color: var(--orange);
+}
+
+@media screen and (max-width: 600px) {
+    .paymentForm {
+        width: 90%;
+    }
+
+    .paymentForm>p {
+        font: 400 8vw "Verdana";
+        padding: 4vw 0;
+        width: 60%;
+    }
+
+    .paymentForm>div {
+        margin: 10vw 0;
+    }
+
+    .paymentInput {
+        padding: 4vw 10vw;
+    }
+
+    .paymentForm>div>svg {
+        font-size: 6vw;
+    }
+
+    .paymentFormBtn {
+        font: 300 4vw "Verdana";
+        padding: 4vw;
+    }
+}

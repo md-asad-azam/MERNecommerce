@@ -1,0 +1,131 @@
+.orderDetailsPage {
+    background-color: white;
+    min-height: calc(100vh - 7vmax - 4px);
+}
+
+.orderDetailsContainer>h1 {
+    font: 300 3vmax "Verdana";
+    margin: 4vmax 0;
+    color: var(--orange);
+}
+
+.orderDetailsContainer {
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+
+.orderDetailsContainer>p {
+    font: 400 1.8vmax "Verdana";
+    padding-top: 1vmax;
+    text-decoration: underline;
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+    margin: 2vmax;
+}
+
+.orderDetailsContainerBox>div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.orderDetailsContainerBox>div>p {
+    font: 400 1vmax "Verdana";
+    color: black;
+}
+
+.orderDetailsContainerBox>div>span {
+    margin: 0 1vmax;
+    font: 100 1vmax "Verdana";
+    color: #575757;
+}
+
+.orderDetailsCartItems>p {
+    font: 400 1.8vmax "Verdana";
+}
+
+.orderDetailsCartItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailsCartItemsContainer>a {
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.orderDetailsCartItemsContainer>a:hover {
+    color: var(--orange);
+    border-radius: 0.5vmax;
+    cursor: pointer;
+}
+
+.orderDetailsCartItemsContainer>a:hover div {
+    border: 1px solid grey;
+}
+
+.orderDetailsCartItemsContainer div {
+    display: flex;
+    font: 400 1vmax "Verdana";
+    color: black;
+    align-items: center;
+    padding: 0.5vmax 0;
+    border: 1px solid transparent;
+}
+
+.orderDetailsCartItemsContainer div>img {
+    width: 3vmax;
+    padding-left: 0.5vmax;
+}
+
+.orderDetailsCartItemsContainer div>p {
+    flex: 1;
+    color: #575757;
+}
+
+.orderDetailsCartItemsContainer div>span {
+    font: 100 1vmax "Verdana";
+    color: #5e5e5e;
+    margin-right: 0.5vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .orderDetailsContainer>p {
+        font: 400 6vw "Verdana";
+    }
+
+    .orderDetailsContainerBox>div {
+        margin: 6vw 0;
+    }
+
+    .orderDetailsContainerBox>div>p {
+        font: 400 4vw "Verdana";
+    }
+
+    .orderDetailsContainerBox>div>span {
+        font: 100 4vw "Verdana";
+    }
+
+    .orderDetailsCartItems>p {
+        font: 400 6vw "Verdana";
+    }
+
+    .orderDetailsCartItemsContainer div {
+        font: 400 4vw "Verdana";
+        margin: 4vw 0;
+    }
+
+    .orderDetailsCartItemsContainer div>img {
+        width: 10vw;
+    }
+
+    .orderDetailsCartItemsContainer div>a {
+        margin: 2vw;
+        width: 30%;
+    }
+
+    .orderDetailsCartItemsContainer div>span {
+        font: 100 4vw "Verdana";
+    }
+}

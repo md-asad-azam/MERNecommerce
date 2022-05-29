@@ -1,0 +1,71 @@
+footer {
+    padding: 2vmax;
+    background-image: linear-gradient(to Left, var(--dark-yellow), yellow);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vmax;
+    border: 2px solid black;
+}
+
+footer .left{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+footer .left .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: cent
+}
+footer .left .links .link{
+    font-size: 3vmax;
+    margin: auto 1.5vmax;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+}
+
+footer .right{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    width: 45%;
+}
+footer > .right >.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vmax;
+}
+footer p{
+    font-size: 1.5vmax;
+    text-align: center;
+    margin: 0 2px;
+}
+footer .copyrigth{
+    font-size: 1.3vmax;
+    text-align: center;
+}
+footer a{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        padding: 1.5vmax 0.5vmax;
+    }
+    footer > .right >.container{
+        flex-direction: column;
+    }
+    footer .right{
+        width: 50%;
+    }  
+    footer .right p{
+        font-size: 1vmax;
+    }
+}

@@ -1,0 +1,48 @@
+.orderSuccess {
+    text-align: center;
+    min-height: calc(100vh - 7vmax - 4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderSuccess>svg {
+    font-size: 7vmax;
+    color: var(--dark-yellow);
+}
+
+.orderSuccess>p {
+    font-size: 2vmax;
+    margin: 1vmax;
+}
+
+.orderSuccess>a {
+    padding: 1vmax 3vmax;
+    text-decoration: none;
+    margin: 1.5vmax;
+    background-color: var(--dark-yellow);
+    cursor: pointer;
+    color: black;
+    border-radius: 3vmax;
+    border: none;
+    font: 300 1.5vmax "Verdana";
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .orderSuccess>a {
+        padding: 3vw 6vw;
+        font: 400 4vw "Verdana";
+        margin: 2vmax;
+    }
+
+    .orderSuccess>svg {
+        font-size: 20vw;
+    }
+
+    .orderSuccess>p {
+        margin: 2vmax;
+        font-size: 5vw;
+    }
+}

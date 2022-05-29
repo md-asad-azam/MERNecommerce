@@ -1,0 +1,58 @@
+.cartItemCard {
+    display: flex;
+    padding: 1vmax;
+    height: 8vmax;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.cartItemCard>img {
+    width: 6vmax;
+    height: 5vmax;
+    object-fit: cover;
+}
+
+.cartItemCard>div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3vmax 1vmax;
+}
+
+.cartItemCard>div>a {
+    font: 300 1vmax cursive;
+    color: rgba(24, 24, 24, 0.8);
+    text-decoration: none;
+}
+
+.cartItemCard>div>span {
+    font: 300 1vmax "Verdana";
+    color: rgba(24, 24, 24, 0.8);
+}
+
+.cartItemCard>div>p {
+    font: 100 1vmax "Verdana";
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .cartItemCard {
+        padding: 3vmax;
+        height: 25vmax;
+    }
+    .cartItemCard>img {
+        width: 10vmax;
+    }
+    .cartItemCard>div {
+        width: 1vmax 2vmax;
+    }
+    .cartItemCard>div>a{
+        font: 300 2vmax cursive;
+    }
+    .cartItemCard>div>span {
+        font: 300 1.9vmax "Verdana";
+    }
+    .cartItemCard>div>a{
+        font: 300 1.8vmax "Verdana";
+    }
+}

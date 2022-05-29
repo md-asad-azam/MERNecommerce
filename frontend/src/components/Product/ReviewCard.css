@@ -1,0 +1,61 @@
+.reviewCard {
+    flex: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid black;
+    width: 25vmax;
+    min-height: 10vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 2vmax;
+    transition: all 0.5s;
+}
+
+.reviewCard:hover {
+    box-shadow: 0 0 5px var(--dark-yellow);
+    transform: scale(1.1);
+}
+
+.reviewCard>.top {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vmax;
+}
+
+.reviewCard>.top>img {
+    width: 5vmax;
+    height: 5vmax;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1vmax;
+}
+
+.reviewCard>.top>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 5vmax;
+}
+
+.reviewCard>.top>div>.stars svg {
+    color: black;
+}
+
+.reviewCard>.top>div>p {
+    color: black;
+    font: 600 1vmax "Verdana";
+}
+
+.reviewCard>.top>div>span {
+    color: black;
+    font: 200 1vmax "Verdana";
+}
+
+.reviewCard>span {
+    color: rgba(0, 0, 0, 0.45);
+    font: 300 0.8vmax cursive;
+}

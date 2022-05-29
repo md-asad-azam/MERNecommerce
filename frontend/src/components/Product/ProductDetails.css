@@ -1,0 +1,309 @@
+.productDetails {
+    width: 80vw;
+    background-color: whitesmoke;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10vmax;
+    display: flex;
+    border: 2px solid black;
+}
+
+.productDetails>.carousel,
+.productDetails>.second {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.productDetails>.carousel>div {
+    width: 100%;
+    height: 27vmax;
+}
+
+.productDetails>.second {
+    align-items: flex-start;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 27vmax;
+    object-fit: cover;
+}
+
+.detailsBlock-1>h2 {
+    color: rgb(54, 54, 54);
+    font: 600 1.6vmax "verdana";
+}
+
+.detailsBlock-1>p {
+    color: rgba(0, 0, 0, 0.548);
+    font: 200 0.8vmax "cursive";
+}
+
+.detailsBlock-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmax 0;
+}
+
+.detailsBlock-2>span {
+    color: black;
+    font: 200 1.2vmax cursive;
+}
+
+.detailsBlock-2>.stars svg {
+    color: black;
+}
+
+.detailsBlock-3 {
+    width: 70%;
+}
+
+.detailsBlock-3>h1 {
+    color: black;
+    font: 600 1.8vmax "Verdana";
+    margin: 1vmax 0;
+}
+
+.detailsBlock-3-1 {
+    display: flex;
+    align-items: center;
+    height: 3vmax;
+}
+
+.detailsBlock-3-1-1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1.5px solid black;
+}
+
+.detailsBlock-3-1-1>button {
+    border: none;
+    height: 100%;
+    width: 2vmax;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    font: 800 1vmax "Verdana";
+    transition: all 0.5s;
+}
+
+.detailsBlock-3-1-1>button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.detailsBlock-3-1-1>input {
+    border: none;
+    height: 100%;
+    width: 2vmax;
+    text-align: center;
+    outline: none;
+    font: 400 1vmax "Verdana";
+    color: black;
+}
+
+.detailsBlock-3-1>.addToCart {
+    height: 100%;
+    border: 1.5px solid black;
+    margin: 1vmax;
+    display: flex;
+}
+
+.detailsBlock-3-1>.addToCart>button {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    background-color: yellow;
+    font: 500 1vmax "Verdana";
+    padding: 0vmax 0.5vmax;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+.detailsBlock-3-1>.addToCart>button:hover {
+    background-color: var(--dark-yellow);
+}
+
+.detailsBlock-3>p {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 1vmax 0;
+    color: rgba(0, 0, 0, 0.548);
+    font: 400 1vmax "Verdana";
+    margin: 2vmax 0;
+}
+
+.detailsBlock-4 {
+    color: black;
+    font: 500 1.3vmax sans-serif;
+    width: 70%;
+}
+
+.detailsBlock-4>p {
+    color: rgba(0, 0, 0, 0.7);
+    font: 300 0.9vmax sans-serif;
+}
+
+.submitReview {
+    height: 3.5vmax;
+    border: 1.5px solid black;
+    cursor: pointer;
+    color: black;
+    background-color: yellow;
+    font: 400 1vmax "Verdana";
+    padding: 0.6vmax 2vmax;
+    margin: 1vmax 0;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.submitReview:hover {
+    background-color: var(--dark-yellow);
+    transform: scale(1.1);
+}
+
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitDialogTextArea {
+    border: 1px solid rgba(0, 0, 0, 0.563);
+    outline: none;
+    margin: 1vmax 0;
+    padding: 1rem;
+    font: 300 1vmax "Verdana";
+}
+
+.reviewHeading {
+    color: black;
+    font: 500 1.4vmax "Verdana";
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0.7vmax;
+    margin: auto;
+    margin-bottom: 2vmax;
+    margin-top: 3vmax;
+    width: 70%;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vmax;
+}
+
+.noReviews {
+    font: 400 1.3vmax "Gill sans";
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .productDetails {
+        flex-direction: column;
+    }
+
+    .productDetails>div:last-child {
+        align-items: center;
+    }
+
+    .detailsBlock-1>h2 {
+        font-size: 2.8vmax;
+        text-align: center;
+    }
+
+    .detailsBlock-1>p {
+        text-align: center;
+        font-size: 1vmax;
+    }
+
+    .detailsBlock-2 {
+        flex-direction: row;
+    }
+
+    .detailsBlock-2>span {
+        font-size: 1vmax;
+    }
+
+    .detailsBlock-3 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detailsBlock-3>h1 {
+        font: 700 3vmax "Verdana";
+    }
+
+    .detailsBlock-3-1 {
+        flex-direction: column;
+        height: 8vmax;
+    }
+
+    .detailsBlock-3-1-1 {
+        height: 100%;
+        margin-bottom: 1vmax;
+    }
+
+    .detailsBlock-3-1-1>button {
+        width: 5vmax;
+        height: 100%;
+        font: 400 2vmax "Verdana";
+    }
+
+    .detailsBlock-3-1-1>input {
+        width: 5vmax;
+        font: 400 2vmax "Verdana";
+    }
+
+    .detailsBlock-3-1>.addToCart {
+        display: flex;
+        width: 15vmax;
+        height: 100%;
+        margin: 0;
+    }
+
+    .detailsBlock-3-1>.addToCart>button {
+        font: 400 1.5vmax "Verdana";
+        padding: 0;
+    }
+
+    .detailsBlock-3>p {
+        width: 25vmax;
+        text-align: center;
+        font-size: 1.5vmax;
+    }
+
+    .detailsBlock-4 {
+        font: 500 2vmax sans-serif;
+        text-align: center;
+    }
+
+    .detailsBlock-4>p {
+        font: 300 1.5vmax sans-serif;
+    }
+
+    .submitReview {
+        font: 500 1.7vmax "Verdana";
+        padding: 0.8vmax;
+        width: 15vmax;
+        height: 5vmax;
+        margin: 3vmax 0;
+    }
+}

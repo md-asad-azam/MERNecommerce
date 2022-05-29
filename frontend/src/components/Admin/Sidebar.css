@@ -1,0 +1,63 @@
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.sidebar>a:first-child {
+    padding: 0;
+}
+
+.sidebar>a>img {
+    position: relative;
+    width: 5vmax;
+    left: 50%;
+    padding-top: 0.5vmax;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+
+.sidebar>a>img:hover {
+    filter: drop-shadow(0 0 10px var(--dark-yellow));
+}
+
+.sidebar>ul {
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.493);
+    font: 200 1rem "Verdana";
+    padding: 1rem;
+    transition: all 0.5s;
+}
+
+.sidebar a:hover {
+    color: var(--orange);
+}
+
+.sidebar a>P {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a>p>svg {
+    margin-right: 0.5rem;
+}
+
+.sidebar .MuiTypography-root {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sidebar>a>img{
+        display: none;
+    }
+}
